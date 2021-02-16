@@ -52,7 +52,7 @@ class profile::wildfly {
     sticky_session       => false,
   }
 
-  ~> wildfly::reload { 'reload': }
+ # ~> wildfly::reload { 'reload': }
 
   Class['java']
     -> Class['wildfly']
